@@ -171,7 +171,7 @@
                 const message = document.getElementById('message').value;
                 processingModal.classList.remove('hidden');
                 try {
-                    const response = await fetch('https://daraga-api.vercel.app//donate', {
+                    const response = await fetch('https://daraga-api.vercel.app/donate', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ name, phone, amount, message })
